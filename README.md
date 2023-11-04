@@ -9,7 +9,7 @@
 递归下降语法分析设计原理与实现；算式LL(1)语法分析程序: exp2.c  
 <待更新>  
 ## 关于makefile  
-**make exp_** 编译运行对应的exp_.c  
-**make run** 编译运行所有exp_.c
-**make clean** 清理生成文件
-**make** 编译运行所有exp_.c, 并且清理生成文件
+`make exp_` 编译运行对应的exp_.c  
+`make run` 编译运行所有exp_.c  
+`make clean` 清理生成文件  
+`make` 编译运行所有exp_.c, 并且清理生成文件  
