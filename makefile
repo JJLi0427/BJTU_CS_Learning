@@ -1,24 +1,26 @@
-all:run clean # make 编译并运行exp1.c和exp2.c, 然后清理生成文件
+RM = rm -f
+EXE =
+SPACE = echo ""
 
-exp1:exp1.c # make exp1 只编译运行exp1.c
+ifeq ($(OS),Windows_NT) # 识别操作系统
+	RM = del /Q
+	EXE = .exe
+	SPACE = @echo.
+endif
+
+%: %.c # make _.c 只编译运行指定的_.c
+	gcc -o $@ $<
+	$(SPACE)
+	./$@$(EXE)
+	$(SPACE)
+	$(RM) $@$(EXE)
+
+all: exp1.c exp2.c # make 顺序编译运行exp1.c和exp2.c
 	gcc -o exp1 exp1.c
-	@echo.
-	./exp1
-
-exp2:exp2.c # make exp2 只编译运行exp2.c
 	gcc -o exp2 exp2.c
-	@echo.
-	./exp2
-
-run: exp1.c exp2.c # make run 编译运行exp1.c和exp2.c
-	gcc -o exp1 exp1.c
-	gcc -o exp2 exp2.c
-	@echo.
+	$(SPACE)
 	./exp1
-	@echo.
+	$(SPACE)
 	./exp2
-	@echo.
-
-.PHONY: clean # make clean 清理生成文件
-clean:
-	del *.exe
+	$(SPACE)
+	$(RM) *$(EXE)
