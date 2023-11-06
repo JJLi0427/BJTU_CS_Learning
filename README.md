@@ -10,6 +10,4 @@
 <待更新>  
 ## 关于makefile  
 `make exp_` 编译运行对应的exp_.c  
-`make run` 编译运行所有exp_.c  
-`make clean` 清理生成文件  
-`make` 编译运行所有exp_.c, 并且清理生成文件  
+`make` 顺序编译运行而exp1,exp2  
