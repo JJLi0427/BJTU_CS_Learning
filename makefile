@@ -15,7 +15,7 @@ endif
 	$(SPACE)
 	$(RM) $@$(EXE)
 
-all: exp1.c exp2.c # make 顺序编译运行exp1.c和exp2.c
+run2: exp1.c exp2.c # make run2 顺序编译运行exp1.c和exp2.c
 	gcc -o exp1 exp1.c
 	gcc -o exp2 exp2.c
 	$(SPACE)
@@ -23,4 +23,16 @@ all: exp1.c exp2.c # make 顺序编译运行exp1.c和exp2.c
 	$(SPACE)
 	./exp2
 	$(SPACE)
-	$(RM) *$(EXE)
+	$(RM) exp1$(EXE)
+	$(RM) exp2$(EXE)
+
+run3: exp1.c exp3.c # make run3 顺序编译运行exp1.c和exp3.c
+	gcc -o exp1 exp1.c
+	gcc -o exp3 exp3.c
+	$(SPACE)
+	./exp1
+	$(SPACE)
+	./exp3
+	$(SPACE)
+	$(RM) exp1$(EXE)
+	$(RM) exp3$(EXE)
