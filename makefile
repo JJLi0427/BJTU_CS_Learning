@@ -8,7 +8,7 @@ ifeq ($(OS),Windows_NT) # 识别操作系统
 	SPACE = @echo.
 endif
 
-%: %.c # make exp_.c 只编译运行指定的exp_.c
+%: %.c # make exp_ 只编译运行指定的exp_.c
 	gcc -o $@ $<
 	$(SPACE)
 	./$@$(EXE)
