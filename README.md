@@ -9,7 +9,7 @@
 递归下降语法分析设计原理与实现；递归下降语法分析程序: exp2.c  
 <https://blog.csdn.net/lijj0304/article/details/134331022>  
 LL(1)语法分析设计原理与实现: LL(1)语法分析程序: exp3.c  
-<待更新>  
+<https://blog.csdn.net/lijj0304/article/details/134559276>  
 ## 关于makefile  
 `make exp_` 编译运行对应的exp_.c  
 `make run2` 顺序编译运行而exp1,exp2  
