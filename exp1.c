@@ -43,9 +43,9 @@ int symbol(char ch) {
 }
 
 int main(){
-	for(int i = 1; i <= 4; i++){
+	for(int i = 1; i <= 10; i++){
 		char txt1[] = "./test/test";
-		char num[6];
+		char num[8];
 		sprintf(num, "%d.txt", i);
 		strcat(txt1, num);
 		char txt2[] = "./lexical/analyze";
