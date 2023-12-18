@@ -16,4 +16,3 @@ LL(1)语法分析设计原理与实现: LL(1)语法分析程序: exp3.c
 `make exp_` 编译运行对应的exp_.c  
 `make run2` 顺序编译运行而exp1,exp2  
 `make run3` 顺序编译运行而exp1,exp3  
-`make run4` 顺序编译运行而exp1,exp1-4  
