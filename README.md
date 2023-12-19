@@ -11,8 +11,9 @@
 LL(1)语法分析设计原理与实现: LL(1)语法分析程序: exp3.c  
 <https://blog.csdn.net/lijj0304/article/details/134559276>  
 算符优先分析算法设计原理与实现: 算符优先语法分析程序: exp4.c  
-<未更新>  
+<https://blog.csdn.net/lijj0304/article/details/134796816>  
+基于SLR(1)分析的语义分析及中间代码生成程序: exp5.c
+<https://blog.csdn.net/lijj0304/article/details/135097554>  
 ## 关于makefile  
 `make exp_` 编译运行对应的exp_.c  
-`make run2` 顺序编译运行而exp1,exp2  
-`make run3` 顺序编译运行而exp1,exp3  
+`make run_` 顺序编译运行而exp1,exp_  
