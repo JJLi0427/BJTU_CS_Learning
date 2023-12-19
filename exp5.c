@@ -56,7 +56,7 @@ void print(char *str, struct stack *stk, int now) { // 打印分析状态
     for(int i = 0; i <= stk->top; i++) {
         printf("%c:%2d   ", stk->s[i], stk->i[i]);
     }
-    for(int i = 0; i <= 50 - stk->top*7; i++) {
+    for(int i = 0; i <= 60 - stk->top*7; i++) {
         printf(" ");
     }
     for(int i = now; i < strlen(str); i++) {
@@ -73,37 +73,37 @@ void getfour(char *str) {
     int tmp = 1;
     while(1) {
         int flag = 0, close = 0, ptr = 0, start = 0, end = strlen(str);
-	for(int i = 0; i < strlen(str); i++) { // 括号优先级高，先找括号
-	    if(str[i] == '(') start = i + 1;
-	    else if(str[i] == ')') {
-		end = i;
-		break;
-	    }
-	}    
-	for(int i = start; i < end; i++) { 
-	    if(str[k] == '+' || str[k] == '-' || str[k] == '*' || str[k] == '/') {
-		close = 1;
-		break;
-	    }
-	}
-	if(close == 0) {  // 如果括号内没有运算符，消除括号，再重新找括号
-	    int t = start - 1;
-	    for(int i = start; i < end; i++) {
-		str[t++] = str[i];
-	    }
-	    for(int i = end + 1; i < strlen(str); i++) {
-		str[t++] = str[i];
-	    }
-	    str[t] = '\0';
-	    start = 0, end = strlen(str);
-	    for(int i = 0; i < strlen(str); i++) {
-    	        if(str[i] == '(') start = i + 1;
-		else if(str[i] == ')') {
-		    end = i;
-		    break;
-		}
-	    }    
-	}
+        for(int i = 0; i < strlen(str); i++) { // 括号优先级高，先找括号
+            if(str[i] == '(') start = i + 1;
+            else if(str[i] == ')') {
+                end = i;
+                break;
+            }
+        }    
+        for(int i = start; i < end; i++) { 
+            if(str[i] == '+' || str[i] == '-' || str[i] == '*' || str[i] == '/') {
+                close = 1;
+                break;
+            }
+        }
+        if(close == 0) {  // 如果括号内没有运算符，消除括号，再重新找括号
+            int t = start - 1;
+            for(int i = start; i < end; i++) {
+                str[t++] = str[i];
+            }
+            for(int i = end + 1; i < strlen(str); i++) {
+                str[t++] = str[i];
+            }
+            str[t] = '\0';
+            start = 0, end = strlen(str);
+            for(int i = 0; i < strlen(str); i++) {
+                if(str[i] == '(') start = i + 1;
+                else if(str[i] == ')') {
+                    end = i;
+                    break;
+                }
+            }    
+        }
         for(int i = start; i < end; i++) {
             if(str[i] == '*' || str[i] == '/') { // 优先乘除
                 flag = 1;
@@ -127,7 +127,7 @@ void getfour(char *str) {
             while(k < end && str[k] != '+' && str[k] != '-' && str[k] != '*' && str[k] != '/' && str[k] != '=') {
                 printf("%c", str[k++]);
             }
-            printf(", , ");
+            printf(",  ,  ");
             while(j >= start && str[j] != '+' && str[j] != '-' && str[j] != '*' && str[j] != '/' && str[j] != '=') {
                 left[p++] = str[j];
                 j--;
@@ -152,7 +152,7 @@ void getfour(char *str) {
         printf(", ");
         char num[3] = "";
         sprintf(num, "T%d", tmp);
-        printf("%s)\n", num); // 输出目的操作数
+        printf("%s)  ", num); // 输出目的操作数
         tmp++;
         for(int q = 0; q < strlen(num); q++) {
             str[++j] = num[q];
@@ -167,12 +167,12 @@ void getfour(char *str) {
 int SLR(char *str, struct stack *stk) { // SLR1分析函数
     int i = 0;
     int next;
-    printf("stack:                                                    str:\n");
+    printf("stack:                                                              str:\n");
     while(i < strlen(str)) {
         if(stk->top < 0) return 0; // 分析栈不可能为空
         int y = getindex(str[i]);
         if(y == -1 || table[stk->i[stk->top]][y] == 0) { // 表中不存在的状态，分析报错
-	    return 0;
+        return 0;
 	}
         if(table[stk->i[stk->top]][y] > 0) { // 移进操作
             next = table[stk->i[stk->top]][y];
@@ -278,6 +278,7 @@ int main() {
         stk->top = 0;
 		if(SLR(str, stk)) {
 			printf("Gramma legal: %s\n", str);
+            printf("Quaternion:  ");
             getfour(input);
 		}
 		else { 
