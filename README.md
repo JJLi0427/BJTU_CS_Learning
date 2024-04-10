@@ -42,3 +42,8 @@ FAT 文件系统模拟设计与实现：FAT16.cpp
 <https://blog.csdn.net/lijj0304/article/details/135143196>  
 ### 关于makefile  
 `make _` 编译运行对应的_.c  
+
+## computernetwork 计算机网络学习记录  
+### CSDN专栏:  
+ 
+### 对应链接
