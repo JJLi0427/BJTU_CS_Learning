@@ -56,6 +56,18 @@ WEB服务器编程实验: webserver.cpp
 ### CSDN 专栏：
 <https://blog.csdn.net/lijj0304/category_12142945>
 ### 对应链接
+员工管理系统(线性表): employee_manage_1.c employee_manage_2.c    
+<https://blog.csdn.net/lijj0304/article/details/128314731>  
+单行道停车场(栈): one_way_parking.c  
+<https://blog.csdn.net/lijj0304/article/details/128314843>  
+二叉树遍历: binary_tree.c  
+<https://blog.csdn.net/lijj0304/article/details/128314915>   
+图搜索(邻接表，邻接矩阵): graph_search_1.c graph_search_2.c  
+<https://blog.csdn.net/lijj0304/article/details/128314950>  
+最小代价建立通讯网络(图的最小生成树): low_cost_network.c  
+<https://blog.csdn.net/lijj0304/article/details/128314982>  
+二叉排序树: tree_search.c  
+<https://blog.csdn.net/lijj0304/article/details/128315006>
 
 ## programming_training 程序设计分组训练
 
