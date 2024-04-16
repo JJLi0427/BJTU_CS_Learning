@@ -1,6 +1,6 @@
 # BJTU CS专业学习记录(部分课程)
 
-##  compiler编译原理学习记录  
+##  compiler编译原理  
 ### CSDN专栏  
 <https://blog.csdn.net/lijj0304/category_12480839.html>
 ### 对应链接  
@@ -20,7 +20,7 @@ LL(1)语法分析设计原理与实现: LL(1)语法分析程序: exp3.c
 `make exp_` 编译运行对应的exp_.c  
 `make run_` 顺序编译运行而exp1,exp_  
 
-## operationsystem 操作系统学习记录  
+## operationsystem 操作系统 
 ### CSDN专栏:  
 <https://blog.csdn.net/lijj0304/category_12465256.html>  
 ### 对应链接
@@ -43,7 +43,7 @@ FAT 文件系统模拟设计与实现：FAT16.cpp
 ### 关于makefile  
 `make _` 编译运行对应的_.c  
 
-## computernetwork 计算机网络学习记录  
+## computernetwork 计算机网络  
 ### CSDN专栏:  
 <https://blog.csdn.net/lijj0304/category_12637375.html>
 ### 对应链接
@@ -51,3 +51,12 @@ WEB服务器编程实验: webserver.cpp
 <https://blog.csdn.net/lijj0304/article/details/137605114>  
 实现smtp和pop3邮件客户端: smtpemail.cpp pop3email.cpp  
 <https://blog.csdn.net/lijj0304/article/details/137729276>
+
+## datastructure 数据结构
+### CSDN 专栏：
+<https://blog.csdn.net/lijj0304/category_12142945>
+### 对应链接
+
+## programming_training 程序设计分组训练
+
+## deep_learning 深度学习
