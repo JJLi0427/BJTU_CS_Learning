@@ -68,6 +68,8 @@ WEB服务器编程实验: webserver.cpp
 <https://blog.csdn.net/lijj0304/article/details/128314982>  
 二叉排序树: tree_search.c  
 <https://blog.csdn.net/lijj0304/article/details/128315006>
+KMP算法: kmp.cpp
+<https://blog.csdn.net/lijj0304/article/details/127265059>
 
 ## programming_training 程序设计分组训练
 
