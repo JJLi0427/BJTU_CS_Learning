@@ -1,7 +1,7 @@
 # BJTU CS专业学习记录(部分课程)
 
 ##  compiler编译原理  
-### CSDN专栏 <https://blog.csdn.net/lijj0304/category_12480839.html>
+**CSDN专栏** <https://blog.csdn.net/lijj0304/category_12480839.html>
 | 程序                                                                                                            | 链接                                                                                                              |
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | - 无符号数识别程序 `unsigned.cpp`                                             | <https://blog.csdn.net/lijj0304/article/details/134043848> |
@@ -9,14 +9,15 @@
 | - 递归下降语法分析设计原理与实现 `exp2.c`                            | <https://blog.csdn.net/lijj0304/article/details/134331022> |
 | - LL(1)语法分析设计原理与实现 `exp3.c`                                    | <https://blog.csdn.net/lijj0304/article/details/134559276> |
 | - 算符优先分析算法设计原理与实现 `exp4.c`                            | <https://blog.csdn.net/lijj0304/article/details/134796816> |
-| - 基于SLR(1)分析的语义分析及中间代码生成程序 `exp5.c` | <https://blog.csdn.net/lijj0304/article/details/135097554> |
-### 关于makefile  
+| - 基于SLR(1)分析的语义分析及中间代码生成程序 `exp5.c` | <https://blog.csdn.net/lijj0304/article/details/135097554> |  
+
+**关于makefile**   
 `make exp_` 编译运行对应的exp_.c  
 `make run_` 顺序编译运行而exp1,exp_  
 
 ## operationsystem操作系统
 
-### CSDN专栏: <https://blog.csdn.net/lijj0304/category_12465256.html>
+**CSDN专栏** <https://blog.csdn.net/lijj0304/category_12465256.html>
 
 | 问题                                                                                                    | 链接                                                                                                               |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -29,12 +30,12 @@
 | 移动头磁盘调度算法模拟实现与比较 `diskshdule.cpp` | <https://blog.csdn.net/lijj0304/article/details/134843393> |
 | FAT文件系统模拟设计与实现 `FAT16.cpp`                          | <https://blog.csdn.net/lijj0304/article/details/135143196> |
 
-### 关于makefile
+**关于makefile**
 - `make _`：编译运行对应的_.c
 
 ## computernetwork计算机网络
 
-### CSDN专栏: <https://blog.csdn.net/lijj0304/category_12637375.html>
+**CSDN专栏** <https://blog.csdn.net/lijj0304/category_12637375.html>
 
 | 实验                                                                                                                      | 链接                                                                                                             |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -43,7 +44,7 @@
 
 ## datastructure数据结构
 
-### CSDN专栏: <https://blog.csdn.net/lijj0304/category_12142945>
+**CSDN专栏** <https://blog.csdn.net/lijj0304/category_12142945>
 
 | 系统                                                                                                                                         | 链接                                                                                                                        |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
