@@ -74,9 +74,9 @@ void printpath(int v, const std::vector<int>& prev, int end) {
     }
 }
 
-void printdijikstra() {
+void printdijikstra(int start) {
     std::vector<int> dist, prev;
-    dijkstra(toint['u'], dist, prev);
+    dijkstra(start, dist, prev);
 
     for (int i = 1; i < adj.size(); i++) {
         printpath(i, prev, i);
@@ -139,7 +139,20 @@ int main() {
     addlink('2', 'u', 'x');
 
     printadj();
-    printdijikstra();
-    
+
+    while (1) {
+        std::cout << "Start point (u~z): ";
+        char start;
+        std::cin >> start;
+        if (toint.find(start) == toint.end()) {
+            std::cout << "Invalid start point!!!" << std::endl;
+        }
+        else {
+            std::cout << std::endl;
+            printdijikstra(toint[start]);   
+            break;
+        }
+    } 
+
     return 0;
 }
