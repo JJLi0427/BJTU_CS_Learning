@@ -42,6 +42,7 @@
 | WEB服务器编程实验 `webserver.cpp` | <https://blog.csdn.net/lijj0304/article/details/137605114> |
 | 实现smtp和pop3邮件客户端 `smtpemail.cpp` `pop3email.cpp` | <https://blog.csdn.net/lijj0304/article/details/137729276> |
 | GBN协议客户端实现 `gbnsender.cpp` `gbnreceiver.cpp` | <https://blog.csdn.net/lijj0304/article/details/137996845> |
+| Dijkstra路由算法软件 `dijkstra.cpp` | <https://blog.csdn.net/lijj0304/article/details/138436778> |
 
 ## datastructure数据结构
 
