@@ -1,0 +1,36 @@
+DSEG SEGMENT
+XXX DW 1234H
+YYY DW 5678H
+ZZZ DW ?
+DSEG ENDS
+
+CSEG SEGMENT
+     ASSUME CS:CSEG,DS:DSEG
+START:MOV AX,DSEG
+      MOV DS,AX
+
+      MOV AX,XXX
+      XOR DX,DX
+
+      ADD AX,AX
+      ADC DX,DX
+
+      ADD AX,AX
+      ADC DX,DX
+
+      ADD AX,AX
+      ADC DX,DX
+
+      ADD AX,AX
+      ADC DX,DX
+
+      ADD AX,YYY
+      ADC DX,0
+
+      MOV WORD PTR ZZZ,AX
+      MOV WORD PTR ZZZ+2,DX
+
+      MOV AH,4CH
+      INT 21H
+CSEG  ENDS
+END START

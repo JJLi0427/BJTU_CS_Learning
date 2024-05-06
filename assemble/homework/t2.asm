@@ -1,0 +1,30 @@
+DATA  SEGMENT
+      A DB 1
+      B DB -2
+      RES1 DB ?
+      RES2 DB ?
+DATA  ENDS
+CODE  SEGMENT
+      ASSUME CS:CODE,DS:DATA
+START:MOV AX,DATA
+      MOV DS,AX
+          MOV AL,A
+          MOV BL,B
+          CMP AL,BL
+      JE NEXT1
+      MOV RES1,BL
+      MOV CL,AL
+      JMP NEXT2
+NEXT1:MOV RES1,AL
+      MOV CL,BL
+NEXT2:CMP CL,0
+      JG NEXT3
+      MOV RES2,-1
+      JMP NEXT4
+NEXT3:MOV RES2,CL
+NEXT4:MOV AH,4CH
+      INT 21H
+CODE ENDS
+END START
+      
+          

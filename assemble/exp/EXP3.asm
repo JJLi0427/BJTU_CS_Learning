@@ -1,0 +1,42 @@
+DATA  SEGMENT
+      ARR DB 56,78,67,40,87,99,63,51,74,100,90,80,68,88,55,66,84,96,45,73
+      S5 DB 0
+      S6 DB 0
+      S7 DB 0
+      S8 DB 0
+      S9 DB 0
+      S10 DB 0
+DATA  ENDS
+CODE  SEGMENT
+      ASSUME CS:CODE,DS:DATA
+START:MOV AX,DATA
+      MOV DS,AX
+      LEA SI,ARR
+      MOV CX,20
+LP:   CMP BYTE PTR [SI],60
+      JGE N6
+      INC S5
+      JMP NEXT
+N6:   CMP BYTE PTR [SI],70
+      JGE N7
+      INC S6
+      JMP NEXT
+N7:   CMP BYTE PTR [SI],80
+      JGE N8
+      INC S7
+      JMP NEXT
+N8:   CMP BYTE PTR [SI],90
+      JGE N9
+      INC S8
+      JMP NEXT
+N9:   CMP BYTE PTR [SI],100
+      JGE N10
+      INC S9
+      JMP NEXT
+N10:  INC S10
+NEXT: INC SI
+      LOOP LP
+      MOV AH,4CH
+      INT 21H
+CODE ENDS
+END START
