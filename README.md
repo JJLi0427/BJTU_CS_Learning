@@ -61,3 +61,7 @@
 ## programming_training 程序设计分组训练
 
 ## deep_learning 深度学习
+
+## assemable 汇编与接口技术
+
+`homework/` 汇编语言学习部分 <https://blog.csdn.net/lijj0304/article/details/130954700>
