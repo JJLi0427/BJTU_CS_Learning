@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <iostream>
-#include "kk.h"
+#include <dirent.h>
 #include <fstream>
 #include <Windows.h>
 using namespace std;
